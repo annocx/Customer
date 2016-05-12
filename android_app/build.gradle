@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+    android {
+        packagingOptions {
+            exclude 'META-INF/LICENSE.txt'
+            exclude 'META-INF/NOTICE.txt'
+            exclude 'project.properties'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.haier.cabinet.customer"
+        multiDexEnabled true
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 43
+        versionName "3.9.5"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    // 移除lint检查的error
+    lintOptions {
+        abortOnError false
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:design:23.2.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.android.support:cardview-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.android.support:percent:23.2.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile project(':common_library')
+    compile project(':social_sdk_library_project')
+    compile project(':wheel')
+    compile project(':slidingtutorial_library')
+    compile files('libs/StatAgent_V1.5.jar')
+    compile files('libs/StatAgent_V1.8.jar')
+    compile files('libs/StatAgent_V1.9.jar')
+    compile files('libs/StatAgent_V2.0.jar')
+}

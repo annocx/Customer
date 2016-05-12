@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    >
+
+    <com.haier.cabinet.customer.view.PullZoomScrollView
+        android:id="@+id/pull_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/user_info_max_height"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/user_all_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="15dp"
+                    android:paddingTop="10dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="我的订单"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/right_arrow"
+                        android:gravity="center_vertical"
+                        android:text="查看全部订单"
+                        android:textColor="@color/gray_text"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="#dadada" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/user_unpaid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/ic_user_unpaid"
+                        android:gravity="center"
+                        android:text="待付款"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/user_paid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/ic_user_paid"
+                        android:gravity="center"
+                        android:text="待发货"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/user_unreceived"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/ic_user_unreceived"
+                        android:gravity="center"
+                        android:text="待收货"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/user_completed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/ic_user_completed"
+                        android:gravity="center"
+                        android:text="已完成"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="#dadada" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/user_info_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip">
+
+                    <TextView
+                        android:id="@+id/user_info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_user_info"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="25dip"
+                        android:text="我的资料"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        android:paddingRight="15dip"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="#dadada" />
+
+                <RelativeLayout
+                    android:id="@+id/user_coupons_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip">
+
+                    <TextView
+                        android:id="@+id/user_coupons_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_coupon"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="25dip"
+                        android:text="@string/user_coupons"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        android:paddingRight="15dip"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="#dadada" />
+
+                <RelativeLayout
+                    android:id="@+id/user_shopping_cart_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip">
+
+                    <TextView
+                        android:id="@+id/user_shopping_cart_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_address"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="25dip"
+                        android:text="我的地址"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        android:paddingRight="15dip"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="#dadada" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/user_refuse_to_use_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip">
+
+                    <TextView
+                        android:id="@+id/user_refuse_to_use_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_user_refuse_to_use"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="25dip"
+                        android:text="@string/user_refuse_deliver"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        android:paddingRight="15dip"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="#dadada" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/invite_friends_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_invite_friends"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="25dip"
+                        android:text="@string/invite_friends"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        android:paddingRight="15dip"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="#dadada" />
+
+                <RelativeLayout
+                    android:id="@+id/referral_code_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_invite_code"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="25dip"
+                        android:text="@string/referral_code"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        android:paddingRight="15dip"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="#dadada" />
+
+                <RelativeLayout
+                    android:id="@+id/settings_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/settings_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_settings"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="15dip"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="25dip"
+                        android:paddingTop="15dip"
+                        android:text="更多"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/right_arrow_image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        android:paddingRight="15dip"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="#dadada" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.haier.cabinet.customer.view.PullZoomScrollView>
+
+    <com.haier.cabinet.customer.view.AccountInfoView
+        android:id="@+id/account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_info_common_height" />
+
+
+</FrameLayout>

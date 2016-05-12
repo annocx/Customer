@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/no_more_view"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:visibility="gone"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_emotion_happy"
+        android:drawablePadding="5dp"
+        android:text="已经到底了,商品随时更新哦"
+        android:textColor="@color/common_gray"/>
+</LinearLayout>

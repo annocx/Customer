@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <com.haier.cabinet.customer.view.CustomNodeLineView
+        android:id="@+id/nodeLineView"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        custom:itemPaddingTop="10dp"
+        custom:otherNodeRadius="5dp"/>
+
+    <com.haier.cabinet.customer.view.CustomListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:dividerHeight="0.5dp"
+        android:cacheColorHint="#000000"
+        android:divider="#D8D8D8" />
+
+</LinearLayout>

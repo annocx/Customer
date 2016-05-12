@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*全局参数*/
+body {font-family:"黑体"; background:#fff; -webkit-text-size-adjust: none;}
+body,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,h7,form,img,p,pre,textarea,blockquote,fieldset {margin:0;padding:0}
+html,body{width:100%;height:100%; font-size:.5rem;}
+ul,ol,li{list-style-type:none}
+table{ border-collapse:collapse}
+img {border:none;-ms-interpolation-mode:bicubic;-webkit-backface-visibility: hidden;}
+em {font-style:normal}
+h1,h2,h3,h4,h5,h6,h7 {font-size:100%}
+a,a:visited {text-decoration:none;color:#000}
+a:hover,a:active {color:#EF620C}
+
+.content_Integral{margin:0 auto;}
+.content_Integral h2{border-bottom:1px solid #d8d8d3; padding:10px 30px; color:#333333; font-size:1.875rem; font-weight:normal; margin-bottom:15px;}
+.content_Integral p{padding:5px 0 0 1.95rem; color:#333333; line-height:20px; font-size:1.875rem; position:relative; margin:0 30px;}
+.content_Integral p span{position:absolute; left:0; top:4px;}

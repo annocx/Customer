@@ -1,0 +1,110 @@
+@charset "utf-8";
+/*全局参数*/
+body {font-family:"黑体"; -webkit-text-size-adjust: none;}
+body,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,h7,form,img,p,pre,textarea,blockquote,fieldset {margin:0;padding:0}
+html,body{width: 100%;font-size:.5rem;}
+ul,ol,li{list-style-type:none}
+table{ border-collapse:collapse}
+img {border:none;-ms-interpolation-mode:bicubic;-webkit-backface-visibility: hidden;}
+em {font-style:normal}
+h1,h2,h3,h4,h5,h6,h7 {font-size:100%}
+a,a:visited {text-decoration:none;color:#000}
+a:hover,a:active {color:#EF620C}
+
+/*竖屏
+Css代码 
+@media screen and (orientation:portrait) {
+    .content {}
+}*/
+/*横屏
+Css代码 
+@media screen and (orientation:landscape) {  
+    .content {
+		width:60%;
+		background:#0d7dd8 url(appbg.jpg) no-repeat center top;
+    }
+	body{ background:#FFF;}
+} */
+
+.content{margin:0 auto;}
+#about{background-color:#f3f1f4;}
+
+/*关于我们*/
+.content_about{margin:0 auto;}
+.content_about .ab_logo{background-color:#f3f1f4; padding:4rem 0; text-align:center;}
+.content_about .ab_logo img{width:9rem; height:auto;}
+.content_about .ab_logo p{padding-top:1rem; color:#666666; font-size:1.125rem;}
+.content_about .ab_logo p strong{color:#000000; font-size:1.875rem; font-weight:normal; line-height:2.85rem;}
+.content_about ul.ab_l{margin:0 5% 2.5rem; background-color:#ffffff; border:1px solid #e5e5e5;}
+.content_about ul.ab_l p.text{font-size:1.5rem; color:#333333; line-height:1.8rem; padding:5%;}
+.content_about ul.ab_l li{display:block; text-align:left; padding:1.5rem 5%; border-top:1px solid #e5e5e5; position:relative;}
+.content_about ul.ab_l li img{width:1.8125rem; height:auto; position:absolute; left:1.5rem; top:1.5rem;}
+.content_about ul.ab_l li p{padding-left:2.6125rem; font-size:1.5rem; line-height:1.8125rem;}
+/*关于我们*/
+
+/*二手交易*/
+.content_Trading{margin:0 auto;}
+.content_Trading ul.conlist{padding-bottom:5.1875rem; min-height:12.5rem;}
+.content_Trading ul.conlist li{display:block; margin:0 0 .625rem; padding:1.875rem 5%; background-color:#fff; position:relative; overflow:hidden;}
+.content_Trading ul.conlist li .showpic{position:absolute; left:5%; top:1.875rem; width:5.375rem;}
+.content_Trading ul.conlist li .showpic img{width:5.375rem; height:auto; border-radius:.625rem;}
+.content_Trading ul.conlist li .showtxt{display:block; overflow:hidden; padding-left:6.375rem;}
+.content_Trading ul.conlist li .showtxt .txtbox1{border-bottom:1px solid #e0e0e0; padding-bottom:.6rem;}
+.content_Trading ul.conlist li .showtxt .txtbox1 h2{font-size:1.875rem;}
+.content_Trading ul.conlist li .showtxt .txtbox1 p{color:#898989; font-size:1.5rem;}
+.content_Trading ul.conlist li .showtxt .txtbox2{font-size:1.875rem; padding:1.1rem 0;}
+.content_Trading ul.conlist li .showtxt .txtbox2 img{width:8.375rem; margin-right:.6rem; margin-top:.6rem; display:inline-block;}
+.content_Trading ul.conlist li .showtxt .txtbox3{position:relative; height:3.075rem;}
+.content_Trading ul.conlist li .showtxt .txtbox3 span{position:absolute; left:0; top:0; line-height:2.975rem; color:#898989; font-size:1.5rem;}
+.content_Trading ul.conlist li .showtxt .txtbox3 a{width:7.4375rem; height:2.75rem; line-height:2.75rem; text-align:center; display:block; position:absolute; right:0; top:0; border:1px solid #cfcfcf; border-radius:.625rem; color:#aeaeae; font-size:1.5rem;}
+.content_Trading ul.conlist li .showtxt .txtbox3 a img{margin-bottom:-0.3125rem; margin-right:4px; width:1.625rem; height:auto;}
+.content_Trading ul.conlist li .showtxt .txtbox4{background-color:#f4f3f2; margin-top:1.275rem;}
+.content_Trading ul.conlist li .showtxt .txtbox4 p{color:#898989; font-size:1.5rem; line-height:1.75rem; padding:.6rem;}
+.content_Trading ul.conlist li .showtxt .txtbox4 p.line{border-bottom:1px solid #e0e0e0;}
+.content_Trading ul.conlist li .showtxt .txtbox4 p span{color:#0c7dd8;}
+.content_Trading .Replybox{position:fixed; background-color:#f3f1f4; left:0; bottom:0; padding:0.625rem 2%; width:96%;}
+.content_Trading .Replybox input{width:96%; padding:0 2%; background-color:#ffffff; border-radius:.625rem; height:3.75rem; line-height:3.75rem; border:none; outline:none; color:#aeaeae; font-size:1.875rem;}
+
+.content_Trading ul.Eliminate{ padding-bottom:0;}
+
+.content_Trading ul.replist{padding-bottom:5.1875rem; background-color:#f3f1f4; padding-left:5%;}
+.content_Trading ul.replist li{border-bottom:1px solid #e0e0e0; display:block; padding:1.25rem 5% 1.25rem 0; position:relative;}
+.content_Trading ul.replist li .showpic{position:absolute; left:0; top:1.25rem; width:4.25rem;}
+.content_Trading ul.replist li .showpic img{width:4.25rem; height:auto; border-radius:.625rem;}
+.content_Trading ul.replist li .showtxt{display:block; overflow:hidden; padding-left:5.25rem;}
+.content_Trading ul.replist li .showtxt h2{font-size:1.875rem; color:#898989;}
+.content_Trading ul.replist li .showtxt p{font-size:1.5rem; color:#898989;}
+/*二手交易*/
+
+/*附近的店*/
+.content_Nearby{margin:0 auto;}
+.content_Nearby ul.conlist{min-height:12.5rem;}
+.content_Nearby ul.conlist li{display:block; margin:0 0 .625rem; padding:1.875rem 5%; background-color:#fff; overflow:hidden;}
+.content_Nearby ul.conlist li .showpic{}
+.content_Nearby ul.conlist li .showpic img{width:100%; height:auto;}
+.content_Nearby ul.conlist li .showtxt h2{color:#333333; font-size:1.875rem; line-height:1.8125rem; padding:.5rem 0;}
+.content_Nearby ul.conlist li .showtxt h2 img{width:1.8125rem; height:auto; margin-bottom:-0.3125rem; margin-right:.6rem;}
+.content_Nearby ul.conlist li .showtxt .nearbox1{color:#8f8d8d; font-size:1.5rem; background-color:#fafafa; line-height:1.875rem;}
+.content_Nearby ul.conlist li .showtxt .nearbox2{color:#666666; font-size:1.5rem; line-height:1.475rem; position:relative; margin-top:.4rem;}
+.content_Nearby ul.conlist li .showtxt .nearbox2 span{ position:absolute; right:0; bottom:0; color:#898989;}
+/*附近的店*/
+
+/*号码通*/
+.content_Number{margin:0 auto;}
+.content_Number .Switchtop{border:1px solid #cfcfcf;}
+.content_Number .Switchtop span{width:20%; display:inline-block; line-height:4.875rem; text-align:center; color:#666666; font-size:1.5rem; position:relative;}
+.content_Number .Switchtop span.slider_on{color:#fe4f00; border-bottom:1px solid #fe4f00;}
+.content_Number .Switchtop span em{width:1px; background-color:#cfcfcf; height:1.375rem; position:absolute; right:0; top:1.75rem;}
+.content_Number .Switchtop a{width:20%; display:inline-block; line-height:4.875rem; text-align:center; color:#666666; font-size:1.5rem;}
+
+.content_Number .Switchbottom{padding:0 5%;}
+.content_Number .Switchbottom ul li{border-bottom:1px solid #e0e0e0; padding:1.875rem 0; position:relative;}
+.content_Number .Switchbottom ul li .showpic{position:absolute; left:0; top:1.875rem; height:6.0625rem;}
+.content_Number .Switchbottom ul li .showpic img{width:6.0625rem; height:6.0625rem; border-radius:50%;}
+.content_Number .Switchbottom ul li .showtxt{padding:0 4.125rem 0 7.0625rem;}
+.content_Number .Switchbottom ul li .showtxt h2{color:#333333; font-size:1.875rem;}
+.content_Number .Switchbottom ul li .showtxt p{font-size:#898989; font-size:1.5rem; line-height:1.675rem; margin-top:.8rem;}
+.content_Number .Switchbottom ul li .showtel{position:absolute; right:0; top:1.875rem; width:3.125rem}
+.content_Number .Switchbottom ul li .showtel span{font-size:1.5rem; color:#898989; display:block; text-align:center; line-height:2.1rem;}
+.content_Number .Switchbottom ul li .showtel a img{width:3.125rem; height:auto;}
+/*号码通*/

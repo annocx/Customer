@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <!-- title bar -->
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar_text" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:id="@+id/untake_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <!-- 蓝色矩形区域 begin -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_blue_corners_button"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_marginLeft="46dip"
+                    android:layout_marginRight="46dip"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/shape_circle_white"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/box_no_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue_text"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:text="号箱"
+                        android:textColor="@color/blue_text"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/open_box_success_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_open_box_success"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:minHeight="50dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/open_package_box_success"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/open_box_failed_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_open_box_failed"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:minHeight="50dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/open_package_box_failed"
+                    android:textColor="#ff0"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/open_package_box_success_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_light_blue_squares_button"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:visibility="gone"  >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请及时取件"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:text="取件完毕请记得关闭箱门"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/open_package_box_failed_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_light_blue_squares_button"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="取件码："
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:id="@+id/box_pickup_no_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/font_normal" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:text="@string/open_package_box_failure_tip"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_normal" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 蓝色矩形区域 end -->
+
+            <TextView
+                android:id="@+id/express_tip_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/grey_text"
+                android:textSize="@dimen/font_normal" />
+
+            <com.haier.cabinet.customer.view.CustListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_normal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="请写下对本次服务的评价吧，也可以直接选择常用关键词快速评价哦~"
+                    android:imeOptions="actionSearch"
+                    android:maxLength="140"
+                    android:padding="15dp"
+                    android:textColor="@color/black_text"
+                    android:textColorHint="@color/gray_text"
+                    android:textSize="12sp">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_char_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="8dp"
+                    android:text="剩余140字"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#A4A4A4"
+                    android:textSize="12sp" />
+
+                <com.haier.cabinet.customer.view.MyGridView
+                    android:id="@+id/gv_lable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="4"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:verticalSpacing="10dp"
+                    android:listSelector="@android:color/transparent"></com.haier.cabinet.customer.view.MyGridView>
+
+            </LinearLayout>
+
+            <com.haier.cabinet.customer.view.MyGridView
+                android:id="@+id/noScrollgridview"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:horizontalSpacing="3dp"
+                android:numColumns="3"
+                android:padding="15dp"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="产品品质"
+                        android:textColor="@color/black_text"
+                        android:layout_weight="1"/>
+
+                    <RatingBar
+                        android:id="@+id/rb_product"
+                        style="@style/MyRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:stepSize="1"
+                        android:layout_gravity="right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="物流服务"
+                        android:textColor="@color/black_text"
+                        android:layout_weight="1"/>
+
+                    <RatingBar
+                        android:id="@+id/rb_logistics"
+                        style="@style/MyRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:stepSize="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务态度"
+                        android:textColor="@color/black_text"
+                        android:layout_weight="1"/>
+
+                    <RatingBar
+                        android:id="@+id/rb_server"
+                        style="@style/MyRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:stepSize="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_send_comment"
+                style="@style/common_button_style"
+                android:layout_margin="30dp"
+                android:background="@drawable/selector_common_corners_button"
+                android:text="发表评论" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

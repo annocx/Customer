@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dip"
+        android:drawableTop="@drawable/ic_shop_cart_empty"
+        android:gravity="center"
+        android:text="亲，购物车空空的耶"
+        android:textColor="#ff898989"
+        android:textSize="@dimen/font_normal"
+         />
+
+    <Button
+        android:id="@+id/look_button"
+        style="@style/common_button_style"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/selector_common_corners_button"
+        android:text="去逛逛"
+        android:textSize="15sp"
+        android:textColor="@android:color/white" />
+</LinearLayout>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/load_view"
+        layout="@layout/pull_to_load_footer"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            layout="@layout/reload_layout"
+            android:layout_marginBottom="80dp"
+            android:visibility="gone" />
+        
+        <com.haier.cabinet.customer.view.PullToRefreshListView
+            android:id="@+id/life_refreshable_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             />
+
+        
+    </FrameLayout>
+
+</LinearLayout>

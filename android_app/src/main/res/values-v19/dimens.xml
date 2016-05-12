@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_bar_padding_top">20dp</dimen>
+    <dimen name="home_banner_height">178dp</dimen>
+    <dimen name="banner_height">168dp</dimen>
+    <dimen name="user_info_min_height">120dp</dimen>
+    <dimen name="user_info_common_height">168dp</dimen>
+    <dimen name="user_info_max_height">250dp</dimen>
+    <dimen name="user_info_move_marginRight">20dp</dimen>
+    <dimen name="home_gird_item_horizontal_margin">10dp</dimen>
+    <dimen name="home_gird_item_vertical_margin">2.5dp</dimen>
+</resources>

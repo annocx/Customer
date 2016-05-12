@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="75dp"
+        android:paddingTop="30dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <com.haier.cabinet.customer.view.YsnowWebView
+            android:id="@+id/ysnowswebview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.haier.cabinet.customer.view.YsnowWebView>
+
+    </LinearLayout>
+
+</ScrollView>

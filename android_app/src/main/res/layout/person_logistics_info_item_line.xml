@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp" >
+
+    <com.haier.cabinet.customer.view.CustomTextView
+        android:id="@+id/info_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_text"
+        android:textSize="14sp"
+        android:layout_marginBottom="5dp"/>
+
+    <com.haier.cabinet.customer.view.CustomTextView
+        android:id="@+id/dateTime_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/light_grey"
+        android:textSize="12sp"
+        android:visibility="visible"/>
+</LinearLayout>

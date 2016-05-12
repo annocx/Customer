@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+*{ text-decoration: none; border:none; list-style:none; list-style-type:none; padding:0; margin:0}
+li{padding:0; margin:0}
+body{font-family:"微软雅黑";position:relative; width:100%; color:#000;}
+
+/*关于我们*/
+.contactbox{width:95%; margin:10px auto; line-height:24px; font-size:15px}
+.contactbox h1{ font-size:18px; color:#009; line-height:40px;}
+.contactbox p{}
+.contactbox img{width:100%; margin-top:5px; max-width:229px;}
+/*用户注册协议*/
+.Agreement{width:95%; margin:10px auto; line-height:24px; font-size:15px}
+.Agreement .box{border:1px solid #000; overflow:hidden; padding:20px; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px;}
+.Agreement .box h1{font-size:16px; text-align:center; line-height:28px;}
+.Agreement .box .Article{line-height:24px; font-size:14px;}

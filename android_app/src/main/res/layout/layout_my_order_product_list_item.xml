@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_detail_text"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:background="#f8f8f8" >
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/right_layout"
+        android:layout_toRightOf="@id/product_image"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/common_black_text"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/discount_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="34"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pro_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/gray_text"
+            android:text="*1"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

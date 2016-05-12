@@ -1,0 +1,38 @@
+package com.haier.cabinet.customer.view;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.RelativeLayout;
+
+import com.haier.cabinet.customer.R;
+
+
+/**
+ * Created by cundong on 2015/10/9.
+ * <p/>
+ * RecyclerView的HeaderView，简单的展示一个TextView
+ */
+public class HeaderLayout extends RelativeLayout {
+
+    public HeaderLayout(Context context, int resourcesId) {
+        super(context);
+        init(context, resourcesId);
+    }
+
+    public HeaderLayout(Context context, AttributeSet attrs, int resourcesId) {
+        super(context, attrs);
+        init(context, resourcesId);
+    }
+
+    public HeaderLayout(Context context, AttributeSet attrs, int defStyleAttr, int resourcesId) {
+        super(context, attrs, defStyleAttr);
+        init(context, resourcesId);
+    }
+
+    public void init(Context context, int resourcesId) {
+
+        inflate(context, resourcesId, this);
+    }
+
+}

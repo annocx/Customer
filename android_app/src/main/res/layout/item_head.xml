@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical" >
+
+    <com.haier.cabinet.customer.view.SlideShowView
+        android:id="@+id/slideshowView"
+        android:layout_width="match_parent"
+        android:layout_height="180.0dip" />
+
+    <Button
+            android:id="@+id/scan_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_marginTop="@dimen/list_padding"
+            android:layout_weight="7"
+            android:background="@drawable/selector_blue_corners_button"
+            android:text="@string/open_box"
+            android:textColor="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页导航 -->
+     <string-array name="bottom_bar_labels">
+        <item>@string/tab_home</item>
+        <item>@string/tab_life</item>
+        <item>@string/tab_shop_cart</item>
+        <item>@string/tab_person</item>
+    </string-array>
+    
+    <!-- 常用快递公司 名称 -->
+    <string-array name="common_express_name">
+        <item>申通快递</item>
+        <item>韵达快递</item>
+        <item>顺丰速运</item>
+        <item>圆通快递</item>
+        <item>EMS</item>
+        <item>天天快递</item>
+        <item>宅急送</item>
+    </string-array>
+    <!-- 常用快递公司 电话 -->
+    <string-array name="common_express_phone">
+        <item>95543</item>
+        <item>95546</item>
+        <item>95338</item>
+        <item>95554</item>
+        <item>11183</item>
+        <item>400&#8211;188&#8211;8888</item>
+        <item>400&#8211;6789&#8211;000</item>
+    </string-array>
+    <!-- 常用快递公司 logo -->
+    <string-array name="common_express_logo">
+        <item>@drawable/ic_express_sto</item>
+        <item>@drawable/ic_express_yunda</item>
+        <item>@drawable/ic_express_sf</item>
+        <item>@drawable/ic_express_yt</item>
+        <item>@drawable/ic_express_ems</item>
+        <item>@drawable/ic_express_ttkd</item>
+        <item>@drawable/ic_express_zjs</item>
+    </string-array>
+
+    <string-array name="service_time_name">
+        <item>8:00~9:00</item>
+        <item>9:00~10:00</item>
+        <item>10:00~11:00</item>
+        <item>11:00~12:00</item>
+        <item>12:00~13:00</item>
+        <item>13:00~14:00</item>
+        <item>14:00~15:00</item>
+        <item>15:00~16:00</item>
+        <item>16:00~17:00</item>
+        <item>17:00~18:00</item>
+        <item>18:00~19:00</item>
+        <item>19:00~20:00</item>
+    </string-array>
+    <string-array name="service_time_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <!-- 订单 -->
+    <string-array name="order_title_bar_labels">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>已完成</item>
+    </string-array>
+
+    <!-- 地区 -->
+    <string-array name="producer_title_bar_labels">
+        <item>东北</item>
+        <item>华北</item>
+        <item>西北</item>
+        <item>华东</item>
+        <item>华南</item>
+        <item>华中</item>
+        <item>西南</item>
+    </string-array>
+</resources>

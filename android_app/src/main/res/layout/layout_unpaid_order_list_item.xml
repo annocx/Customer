@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp" >
+
+        <TextView
+            android:id="@+id/place_order_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_grey"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/order_state_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/common_color"
+            android:text="等待付款"
+            android:textSize="@dimen/font_normal" />
+    </RelativeLayout>
+    
+    <com.haier.cabinet.customer.view.CustListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="5dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp" >
+
+            <TextView
+                android:id="@+id/total_count_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小计"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_normal"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/total_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="34"
+                android:textSize="@dimen/font_normal" />
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/pay_btn"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        style="@style/common_button_style"
+        android:background="@drawable/selector_common_corners_button"
+        android:layout_marginLeft="@dimen/list_padding"
+        android:layout_marginRight="@dimen/list_padding"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        android:text="去支付" />
+        </RelativeLayout>
+
+
+</LinearLayout>

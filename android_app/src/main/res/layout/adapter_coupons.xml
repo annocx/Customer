@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="horizontal"
+    android:weightSum="7.2">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/left_side_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_coupon_red_left" />
+
+        <RelativeLayout
+            android:id="@+id/left_side_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f23039"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/coupon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:text="优惠券"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="￥"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="5"
+                android:textColor="@android:color/white"
+                android:textSize="60sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/discount_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="在线支付专享&#x00A;精选商品可用"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/coupon_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="每笔订单只能使用一张"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dot_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#f23039"
+        android:src="@drawable/ic_coupon_dot_line" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/right_side_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#e72932"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_coupon_usable" />
+
+            <TextView
+                android:id="@+id/begin_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="有效期：2015.11.15"
+                android:textColor="@android:color/white"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/valid_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="@android:color/white"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/right_side_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_coupon_red_right" />
+    </LinearLayout>
+
+</LinearLayout>

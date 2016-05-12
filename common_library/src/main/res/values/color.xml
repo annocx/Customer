@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">#fff3f1f4</color>
+    <color name="title_bar">#ff0c7ed9</color>
+    <color name="blue_dark">#ff0393d6</color>
+    <color name="blue_light">#ff0c7dd9</color>
+    <color name="red_dark">#ffb52121</color>
+    <color name="red_light">#ffcd2222</color>
+    <color name="gray_bg">#ffeeeeec</color>
+    <color name="color_d2">#ffc1c1c1</color>
+    <color name="red_text">#fffe4f00</color>
+    <color name="grey_text">#ff999999</color>
+    <color name="black_text">#ff666666</color>
+    <color name="blue_text">#ff007aff</color>
+    <color name="orange_text">#ffffa810</color>
+    <color name="vertical_sep_color">#ffcccccc</color>
+    <color name="qrcode_square_corner">#ff02a8df</color> 
+    <color name="button_text_gray">#ff898989</color>
+    <color name="common_color">#ffc6003b</color>
+    <color name="common_color_pressed">#ffb2093a</color>
+    <color name="umeng_fb_color_btn_normal">#333333</color>
+    <color name="umeng_fb_color_btn_pressed">#1495F7</color>
+    
+    <color name="viewfinder_frame">#ff000000</color>
+  	<color name="viewfinder_laser">#ffff0000</color>
+  	<color name="title_bar_line_color">#ffb2b2b2</color>
+    <color name="gray_line_color">#ffdddddd</color>
+  	
+  	<color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#ff8a8a8c</color>
+
+    <color name="colorPrimary">#c6003b</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

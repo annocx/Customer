@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.haier.common.widget.PullToRefreshListView
+            android:id="@+id/refreshable_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottom"
+            android:visibility="invisible" />
+
+        <FrameLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true" >
+
+            <RelativeLayout
+                android:id="@+id/normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/title_bar" >
+
+                <CheckBox
+                    android:id="@+id/all_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/selector_checkbox_shop"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/common_black_text"
+                    android:textSize="15sp"
+                    android:text="全选" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="合计："
+                            android:textColor="@color/common_black_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/total_price_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/textView1"
+                            android:textSize="15sp"
+                            android:text="￥0"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/common_color" />
+                        </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="不含运费"
+                        android:textColor="@color/common_black_text"
+                        android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/orderBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/common_color"
+                        android:onClick="onClick"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="去下单"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_bg" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

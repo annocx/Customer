@@ -1,0 +1,130 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" >
+
+    <string name="app_name">CommonLibrary</string>
+    <string name="login">立即登录</string>
+    <string name="mobile">手机号</string>
+    <string name="mobile_hint">请输入手机号码</string>
+    <string name="login_password">登录密码</string>
+    <string name="login_password_hint">家电帮账户登录密码</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="mobile_error">手机号格式有误，请重新输入</string>
+    <string name="psw_error">请输入密码</string>
+    <string name="login_error">账号或密码错误，请重新输入</string>
+    <string name="register">注册</string>
+    <string name="register_tip">新用户</string>
+    <string name="agree">我已阅读并同意</string>
+    <string name="protocol_name">使用条款和隐私政策</string>
+    <string name="next">下一步</string>
+    <string name="register_success">注册成功</string>
+    <string name="resend_verify_code">重新发送(<xliff:g id="kk">%s</xliff:g>)</string>
+    <string name="agree_error">您还未同意服务条款!</string>
+    <string name="switch_to_login">直接登录</string>
+    <string name="register_with_another_mobile">使用其他号码注册</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="registered_warning">号码\"%s\"已经注册过GBank，请尝试</string>
+    <string name="receive_sms_verify">验证码已发送到手机 \"%s\"</string>
+    <string name="send_sms_verify_prefix">已经发送</string>
+    <string name="send_sms_verify_redtext">“短信校验码”</string>
+    <string name="send_sms_verify_suffix">到</string>
+    <string name="input_sms_verify_hint">短信验证码</string>
+    <string name="reget_sms_verify">重新获取校验码</string>
+    <string name="sms_verify_sended">校验码已发送（%d秒）</string>
+    <string name="left_bracket">（</string>
+    <string name="right_bracket">）</string>
+    <string name="error_sms_verify">校验码输入错误，请重新尝试（剩余%d次）</string>
+    <string name="set_psw">设置密码(6&#8211;16个字符)</string>
+    <string name="confirm_psw">验证密码(6&#8211;16个字符)</string>
+    <string name="psw_conflict">两次输入的密码不一致，请重新输入</string>
+    <string name="login_out">注销当前帐号</string>
+    
+    <string name="old_psw">原密码</string>
+    <string name="new_pay_psw">新密码</string>
+    <string name="confirm_pay_psw">确认密码</string>
+    <string name="security_verify">安全验证</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="commit">提交</string>
+    <string name="login_psw_modify">登录密码修改</string>
+    <string name="pay_psw_hint">请输入6–16位密码</string>
+    <string name="new_psw_empty">请输入6–16位新密码</string>
+    <string name="new_psw_length_error">密码长度必须为6–16位</string>
+    <string name="confirm_input_new_psw">请确认输入新密码</string>
+    <string name="confirm_input_psw_hint">请再次输入密码</string>
+    <string name="psw_hint">请输入密码</string>
+    <string name="forgot_psw">忘记密码？</string>
+    <string name="random_psw_login">随机密码登录</string>
+    <string name="weibo_login">微博账号登录</string>
+    <string name="set_psw_finished">设置密码完成</string>
+    <string name="set_psw_notice">恭喜您，密码设定成功！</string>
+    
+    <string name="reset_password">重新设置密码</string>
+    <string name="reset_password_success">恭喜您，密码重设成功！</string>
+    <string name="new_password">新密码</string>
+    <string name="new_password_notice">6–16个字符，区分大小写</string>
+    <string name="forgot_psw_title">找回密码</string>
+	<string name="reload_tip">没有数据，点击屏幕刷新</string>
+	
+	<string name="about_01">海尔集团\n日日顺旗下独立子品牌</string>
+	<string name="about_02">最后一公里\n24小时智能快递柜服务</string>
+	<string name="about_03">一键下单\n收发快递更方便</string>
+	<string name="about_04">安心取件\n日隐私保密更安全</string>
+	<string name="team">日日顺乐家团队</string>
+	<string name="company">日日顺乐家</string>
+	<string name="about_us">关于我们</string>
+	<string name="user_info">个人资料</string>
+	<string name="user_points">我的积分</string>
+	<string name="user_feedback">意见反馈</string>
+	<string name="questionnaire">调查问卷</string>
+	
+	<string name="user_logout">退出登录</string>
+	<string name="user_modify_pwd">修改密码</string>
+	<string name="update_app">新版本检测</string>
+	<string name="settings">更多</string>
+
+    <string name="customer_service">客服</string>
+	<string name="close">关闭</string>
+	<string name="open_package_box_success_tip">请取出包裹并关闭箱门</string>
+	<string name="open_package_box_failure_tip_start">您可以通过取件码(</string>
+	<string name="open_package_box_failure_tip_end">)开箱取件。</string>
+	<string name="scan_qr_code_again_tip">也可以重新扫码</string>
+	<string name="scan_qr_code_again">重新扫码</string>
+	<string name="scan_qr_code_failure">扫码开箱失败</string>
+	<string name="package_box_open_tip">号箱门已打开</string>
+	<string name="share_to_get_points">分享赚积分</string>
+	<string name="submit_success">提交成功</string>
+	<string name="submit_success_tip">您的反馈意见我们会认真采纳，感谢您对日日顺乐家的支持！</string>
+	<string name="submit_success_points_tip_start">恭喜您获得</string>
+	<string name="ten">10</string>
+	<string name="submit_success_points_tip_end">个积分。</string>
+	<string name="lookup_points">查看积分</string>
+	<string name="join_feedback_tip">温馨提示：成功反馈一条意见可以获得10个积分。</string>
+	<string name="points">积分</string>
+	
+	<string name="cabinet_no">货柜号：%1$s</string> 
+	<string name="package_box_no">%1$s#箱</string> 
+	<string name="tracking_no">运单号：</string> 
+	<string name="postman_telephone_text">快递员电话：</string> 
+	<string name="customer_telephone_text">取件人电话：</string> 
+	<string name="pickup_number_text">取件码：</string> 
+	<string name="delivery_time">投递时间：</string> 
+	<string name="pickup_time">取件时间：</string> 
+	<string name="take_off_time">超期时间：</string> 
+	<string name="box_no">%1$d号箱</string> 
+	
+    <string name="person_info">用户中心</string>
+    <string name="points_explanation">积分说明</string>
+    <string name="edit">编辑</string>
+    <string name="save">保存</string>
+    <string name="person_push_msg_text">我的消息</string>
+    <string name="user_points_text">%1$s积分</string>
+    <string name="fetching_express_tip">亲，可以找小伙伴代取哦</string>
+    <string name="fetching_express">找人代取</string>
+    
+    <string name="no_network">网络已经断开</string>
+    <string name="get_data_failure">暂无数据</string>
+    
+    <string name="feedback_et_hint">请留下您的建议，我们将认真采纳.</string>
+    <string name="feedback_content_lenght_limit">字数限制：5——200字</string>
+    <string name="no_push_msg">亲，还木有发现新消息呢！</string>
+    <string name="no_cabinet_nearby">很遗憾，您附近还没有快递柜！</string>
+</resources>

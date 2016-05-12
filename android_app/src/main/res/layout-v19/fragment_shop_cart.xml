@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_main" />
+
+    <include
+        android:id="@+id/load_view"
+        layout="@layout/pull_to_load_footer"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.haier.cabinet.customer.widget.recyclerview.CustRecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    />
+
+                <include android:id="@+id/empty_view"
+                    layout="@layout/layout_shop_cart_empty"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <FrameLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true" >
+
+            <RelativeLayout
+                android:id="@+id/normal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/title_bar" >
+
+                <CheckBox
+                    android:id="@+id/all_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:button="@drawable/selector_checkbox_shop"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/common_black_text"
+                    android:textSize="15sp"
+                    android:text="全选" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="合计："
+                                android:textColor="@color/common_black_text"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/total_price_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/textView1"
+                                android:textSize="15sp"
+                                android:text="￥0"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/common_color" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="不含运费"
+                            android:textColor="@color/common_black_text"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/orderBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/selector_common_button"
+                        android:onClick="onClick"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="去下单"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_bg" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

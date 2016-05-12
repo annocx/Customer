@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <!-- title bar -->
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_bg_w"
+                android:paddingLeft="10dp" >
+
+                <EditText
+                    android:id="@+id/my_set_buyaddress_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_bg_w"
+                    android:hint="请选择城市"
+                    android:editable="false"
+                    android:textColor="#8e8e8e"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:id="@+id/my_set_buyaddress_city_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/my_set_buyaddress_city_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="城市"
+                        android:textColor="#c4c4c4"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </FrameLayout>
+            
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg_w"
+                android:paddingLeft="10dp" >
+
+                <EditText
+                    android:id="@+id/my_set_buyaddress_jiequ"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_bg_w"
+                    android:hint="请输入小区、门牌号"
+                    android:maxLines="2"
+                    android:maxLength="30"
+                    android:textColor="#8e8e8e"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:id="@+id/my_set_buyaddress_jiequ_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/my_set_buyaddress_jiequ_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="小区、门牌号"
+                        android:textColor="#c4c4c4"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg_w"
+                android:paddingLeft="10dp" >
+
+                <EditText
+                    android:id="@+id/my_set_buyaddress_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_bg_w"
+                    android:hint="请输入收货人姓名"
+                    android:maxLength="10"
+                    android:textColor="#8e8e8e"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:id="@+id/my_set_buyaddress_name_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/my_set_buyaddress_name_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="姓名"
+                        android:textColor="#c4c4c4"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg_w"
+                android:paddingLeft="10dp" >
+
+                <EditText
+                    android:id="@+id/my_set_buyaddress_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_bg_w"
+                    android:inputType="phone"
+                    android:minEms="11"
+                    android:maxLength="11"
+                    android:hint="请输入联系电话"
+                    android:textColor="#8e8e8e"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:id="@+id/my_set_buyaddress_phone_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/my_set_buyaddress_phone_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="联系方式"
+                        android:textColor="#c4c4c4"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_default_address_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="13.0dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10.0dip"
+                android:paddingTop="13.0dip" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_default_text"
+                    android:textColor="#333"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/my_set_address_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/checkbox_default_bg"
+                    android:button="@null"
+                    android:checked="false"
+                    android:focusable="false" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/my_set_buyaddress_address_btn"
+        style="@style/common_button_style"
+        android:background="@drawable/selector_common_corners_button"
+        android:layout_marginLeft="@dimen/list_padding"
+        android:layout_marginRight="@dimen/list_padding"
+        android:layout_marginBottom="@dimen/list_padding"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save" />
+
+</RelativeLayout>

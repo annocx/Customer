@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <!-- title bar -->
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar_text" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <!-- 待经件 begin -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <LinearLayout
+                android:id="@+id/untake_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/details_layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/pickup_no_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue_text"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pickup_number"
+                    android:textColor="@color/gray_text"
+                    android:textSize="@dimen/font_medium" />
+
+                <include layout="@layout/layout_home_horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout style="@style/home_box_base_layout" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delivery_time"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:id="@+id/delivery_time_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/home_box_base_layout" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/remain_duration"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:id="@+id/remain_duration_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_normal" />
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_home_horizontal_line" />
+
+                    <LinearLayout style="@style/home_box_base_layout"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/postman_telephone_text"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:id="@+id/postman_telephone_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_normal" />
+                        
+                        <Button
+                            android:id="@+id/call_postman_btn"
+                            style="@style/common_button_style"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/selector_gray_corners_button"
+                            android:drawableLeft="@drawable/ic_call_postman"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="@string/call"
+                            android:textColor="@color/gray_text"
+                            android:textSize="@dimen/font_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/home_box_base_layout" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tracking_no"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:id="@+id/express_no_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/home_box_base_layout" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:minLines="1"
+                            android:text="@string/address_text"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:id="@+id/cabinet_location_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="start"
+                            android:maxLines="2"
+                            android:minLines="1"
+                            android:textSize="@dimen/font_normal" />
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_home_horizontal_line" />
+
+                    <LinearLayout
+                        style="@style/home_box_base_layout"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/scan_button"
+                            style="@style/common_button_style"
+                            android:background="@drawable/selector_blue_corners_button"
+                            android:text="@string/open_box" />
+
+                        <Button
+                            android:id="@+id/share_button"
+                            style="@style/common_button_style"
+                            android:layout_marginTop="@dimen/list_padding"
+                            android:alpha="0.8"
+                            android:background="@drawable/selector_blue_corners_button"
+                            android:text="@string/fetching_express"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_home_horizontal_line" />
+
+                    <LinearLayout
+                        style="@style/home_box_base_layout"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reminder_tip"
+                            android:textSize="@dimen/font_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/seek_help"
+                            android:textSize="@dimen/font_normal" />
+
+                        <com.haier.cabinet.customer.view.DrawableTextView
+                            android:id="@+id/hotline_counseling_text"
+                            style="@style/common_button_style"
+                            android:layout_marginLeft="@dimen/list_padding"
+                            android:layout_marginRight="@dimen/list_padding"
+                            android:layout_marginTop="@dimen/list_padding"
+                            android:background="@drawable/selector_gray_corners_button"
+                            android:drawableLeft="@drawable/ic_telephone"
+                            android:drawablePadding="5dp"
+                            android:gravity="left|center_vertical"
+                            android:clickable="true"
+                            android:text="@string/reminder_content"
+                            android:textColor="@color/blue_text" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/express_state_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_express_untaken" />
+        </FrameLayout>
+        <!-- 待经件  end -->
+
+    </ScrollView>
+
+</LinearLayout>
